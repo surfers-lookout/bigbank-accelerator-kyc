@@ -1,7 +1,7 @@
 accelerator:
   displayName: Big Bank Loan KYC
   description: Scafolding for creation of a new module for Loan System
-  iconUrl: https://raw.githubusercontent.com/surfers-lookout/BigBank-Loan-Accelerator/Public/main/main/static/images/bb-logo.png
+  iconUrl: https://raw.githubusercontent.com/surfers-lookout/bigbank-accelerator-kyc/main/main/static/images/bb-logo.png
   tags:
   - bigbank
   - python
