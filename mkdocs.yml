@@ -1,5 +1,5 @@
-site_name: 'SurfersLookout Accelerator'
-repo_url: https://github.com/davlloyd/surfers-flask-accelerator
+site_name: 'bigbankloanaccelerator'
+repo_url: https://github.com/surferslookout/bigbank-accelerator-kyc
 repo_name: Github
 edit_uri: blob/main/docs/
 docs_dir: docs
@@ -7,3 +7,4 @@ nav:
   - Home: index.md
 plugins:
   - techdocs-core
+

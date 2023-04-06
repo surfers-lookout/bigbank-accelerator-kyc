@@ -51,7 +51,7 @@ accelerator:
 engine:
   merge:
   - include: [ "**/*" ]
-    exclude: [ "config/*.yaml", "Tiltfile", "README.md", "catalog/*.yaml" ]
+    exclude: [ "config/*.yaml", "Tiltfile", "README.md", "catalog/*.yaml", "mkdocs.yml" ]
 
   - include: [ "Tiltfile" ]
     chain:
@@ -102,3 +102,16 @@ engine:
         with: "#artifactId"
       - text: surfers-flask-accelerator
         with: "#artifactId"
+
+
+  - include: [ "mkdocs.yml" ]
+    chain:
+    - type: ReplaceText
+      substitutions:
+      - text: bigbankloanaccelerator
+        with: "#artifactId"
+    - type: ReplaceText
+      condition: "#bsGitRepository != null"
+      substitutions:
+      - text: "https://github.com/surferslookout/bigbank-accelerator-kyc"
+        with: "'https://' + #bsGitRepository.substring(0, #bsGitRepository.indexOf('?')) + '/' + #bsGitRepository.substring((#bsGitRepository.indexOf('=')+1), #bsGitRepository.indexOf('&')) + '/' + #bsGitRepository.substring((#bsGitRepository.indexOf('repo=')+5))"
