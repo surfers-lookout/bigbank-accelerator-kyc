@@ -1,4 +1,6 @@
-# SurfersFlaskAccelerator KYC Application Architecture
+# KYC Application Architecture
+
+![KYC process](kyc_process.svg)
 
 ## Getting Started
 

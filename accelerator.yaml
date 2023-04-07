@@ -14,18 +14,18 @@ accelerator:
     defaultValue: docker.io/<project>
     required: true
   - name: pageColor
-    label: Initial color displayed by the root web page
+    label: Jurisdiction
     inputType: radio
     display: true
     defaultValue: blue
     choices:
-      - text: Blue
+      - text: Customer
         value: blue
-      - text: Green
+      - text: 'Regulatory Authorities'
         value: green
-      - text: Yellow
+      - text: 'External Data Providers'
         value: yellow
-      - text: Red
+      - text: 'AML/CTF'
         value: red
   - name: gitopsEnabled
     label: 'GitOps Deployment Model'
