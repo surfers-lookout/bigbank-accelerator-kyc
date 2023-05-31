@@ -15,6 +15,9 @@ spec:
   #  value: bigbankloanaccelerator-00001
   - name: clusterBuilder
     value: full-jammy
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/language: python
   #- name: git_user_email
   #  value: gitopsemailaddress
   #- name: git_user_name
