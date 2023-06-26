@@ -51,7 +51,7 @@ accelerator:
 engine:
   merge:
   - include: [ "**/*" ]
-    exclude: [ "config/*.yaml", "Tiltfile", "README.md", "catalog/*.yaml", "mkdocs.yml",  "techdocs_publish.sh" ]
+    exclude: [ "config/*.yaml", "Tiltfile", "README.md", "catalog/*.yaml", "mkdocs.yml",  "techdocs_publish.sh", ".vscode/*.json" ]
 
   - include: [ "Tiltfile" ]
     chain:
@@ -124,3 +124,11 @@ engine:
       - text: kyc
         with: "#artifactId"
  
+  - include: [ ".vscode/*.json" ]
+    chain:
+    - type: ReplaceText
+      substitutions:
+      - text: bigbankloanaccelerator
+        with: "#artifactId"
+      #- text: "docker.io/project"
+      #  with: "#repositoryPrefix"
