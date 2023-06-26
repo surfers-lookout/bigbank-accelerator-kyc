@@ -8,11 +8,11 @@ accelerator:
   - web
   - tanzu
   options:
-  - name: repositoryPrefix
-    inputType: text
-    label: Prefix for the container image repository
-    defaultValue: docker.io/<project>
-    required: true
+  #- name: repositoryPrefix
+  #  inputType: text
+  #  label: Prefix for the container image repository
+  #  defaultValue: docker.io/<project>
+  #  required: true
   - name: pageColor
     label: Jurisdiction
     inputType: radio
@@ -59,8 +59,8 @@ engine:
       substitutions:
       - text: bigbankloanaccelerator
         with: "#artifactId.toLowerCase()"
-      - text: docker.io/project
-        with: "#repositoryPrefix"
+      #- text: docker.io/project
+      #  with: "#repositoryPrefix"
 
   - include: [ "config/*.yaml" ]
     chain:
